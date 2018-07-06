@@ -16,8 +16,8 @@ $(document).ready(function() {
 		$(this).css('background-color', colors[index % colors.length]);
 		$(this).text(index + 1);
 	});
-	$('.bar').on('click', function() {
-		var ppt = $(this).attr('data-ppt');
+	$('.bar div').on('click', function() {
+		var ppt = $(this).parent('.bar').attr('data-ppt');
 		window.location = './ppts/' + ppt + '/' + ppt + '.html';
 	})
 });
