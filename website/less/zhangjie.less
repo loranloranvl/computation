@@ -1,0 +1,28 @@
+#content-bars {
+	@barH: 36px;
+	overflow: hidden;
+	.bar {
+		cursor: pointer;
+		div {
+			display: inline-block;
+			vertical-align: top;
+			height: @barH;
+			line-height: @barH;
+			margin-top: 5px;
+		}
+		.index {
+			width: @barH;
+			background-color: black;
+			color: white;
+			text-align: center;
+			font-weight: 600;
+		}
+		.title {
+			background-color: #f3f3f3;
+			font-size: 15px;
+			padding-left: 28px;
+			width: 80%;
+			max-width: 630px;
+		}
+	}
+}

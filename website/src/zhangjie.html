@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	@@include('./partials/head.html')
+	<link rel="stylesheet" href="./css/zhangjie.css">
+</head>
+<body>
+	@@include('./partials/framework-upper.html')
+		<div id="content-bars">
+			<div class="bar">
+				<div class="index">
+					1
+				</div>
+				<div class="title">
+					第一单元 概述
+				</div>
+			</div>
+		</div>
+	@@include('./partials/framework-lower.html')
+<script id="ht-content-bars" type="text/x-handlebars-template">
+	{{#each this}}
+		<div class="bar" data-ppt="{{ppt}}">
+			<div class="index">
+				{{@index}}
+			</div>
+			<div class="title">
+				{{name}}
+			</div>
+		</div>
+	{{/each}}
+</script>
+<script src="./js/zhangjie.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+body {
+  background-color: #333;
+}
+#main {
+  background-color: white;
+  width: 80%;
+  margin: 20px auto;
+}
+@media screen and (max-width: 640px) {
+  #main {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+#intro {
+  background-color: #3B3F4B;
+  padding: 40px;
+}
+#intro p {
+  color: white;
+  width: 100%;
+  max-width: 600px;
+}
+#intro-name {
+  font-size: 30px;
+}
+#intro-univ {
+  font-size: 18px;
+  color: #999;
+  font-weight: 600;
+  margin-left: 15px;
+}
+#graygrid {
+  height: 60px;
+  background-color: #f3f3f3;
+}
+#content {
+  background-color: white;
+  padding: 40px;
+}
+#content-pic {
+  display: block;
+  padding: 5px;
+  border: 1px solid #C4D3EA;
+  width: 100%;
+  max-width: 513px;
+}
+#content nav {
+  margin-top: 60px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  width: 100%;
+}
+@media screen and (max-width: 640px) {
+  #content nav {
+    width: 314px;
+    margin: 20px auto 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #content nav {
+    width: 154px;
+  }
+}
+#content nav div {
+  margin: 3px 1px;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #3B3F4B;
+  outline: 0.1px solid #3B3F4B;
+  color: white;
+  cursor: pointer;
+}
+#content nav .nav-active {
+  background-color: white;
+  outline: 0.1px solid #aaa;
+  color: #333;
+  font-weight: 600;
+}
+table {
+  text-align: center;
+}
+table td,
+table th {
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #ddd;
+}
+table td p,
+table th p {
+  margin: 0;
+}
