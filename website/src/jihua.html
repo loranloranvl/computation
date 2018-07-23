@@ -30,11 +30,11 @@
 		</table><br>
 		<table class="am-hide-sm big">
 			<tr>
-				<th style="width: 60px">序号</th>
-				<th style="width: 300px">授课内容</th>
-				<th style="width: 60px">学时</th>
-				<th style="width: 100px">作业和实验</th>
-				<th style="width: 60px">备注</th>
+				<th style="width: 60px">SES #</th>
+				<th style="width: 300px">Topics</th>
+				<th style="width: 60px">Hours</th>
+				<th style="width: 100px">Homework and Experiment</th>
+				<th style="width: 60px">Remark</th>
 			</tr>
 			{{#each this}}
 				<tr>
@@ -51,26 +51,52 @@
 		<table class="small">
 				<tr>
 					<td>序号</td>
-					<td>{{index}}</td>
+					<td style="color: #666">{{index}}</td>
 				</tr>
 				<tr>
 					<td>授课内容</td>
-					<td>{{name}}</td>
+					<td style="color: #666">{{name}}</td>
 				</tr>
 				<tr>
 					<td>学时</td>
-					<td>{{hours}}</td>
+					<td style="color: #666">{{hours}}</td>
 				</tr>
 				<tr>
 					<td>作业和实验</td>
-					<td>有</td>
+					<td style="color: #666">有</td>
 				</tr>
 				<tr>
 					<td>备注</td>
-					<td></td>
+					<td style="color: #666"></td>
 				</tr>
 		</table>
-		<br class="am-show-sm">
+		<hr class="am-show-sm">
+		{{/each}}
+
+		{{#each this}}
+		<table class="small">
+				<tr>
+					<td>SES #</td>
+					<td style="color: #666">{{index}}</td>
+				</tr>
+				<tr>
+					<td>Topics</td>
+					<td style="color: #666">{{en}}</td>
+				</tr>
+				<tr>
+					<td>Hours</td>
+					<td style="color: #666">{{hours}}</td>
+				</tr>
+				<tr>
+					<td>Homework and Experiment</td>
+					<td style="color: #666">有</td>
+				</tr>
+				<tr>
+					<td>Remark</td>
+					<td style="color: #666"></td>
+				</tr>
+		</table>
+		<hr class="am-show-sm">
 		{{/each}}
 
 	</script>

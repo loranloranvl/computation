@@ -5,8 +5,21 @@
 </head>
 <body>
 	@@include('./partials/framework-upper.html')
-		
+		<div id="ppts">
+
+		</div>
 	@@include('./partials/framework-lower.html')
+	<script id="ht-ppts" type="text/x-handlebars-template">
+		{{#each this}}
+			<div id="ppt">
+				<a href="{{href}}">
+					<i class="am-icon-file-pdf-o"></i>
+					{{name}}
+				</a>
+			</div>
+		{{/each}}
+	</script>
+	<script src="js/ziyuan.js"></script>
 </body>
 
 </html>

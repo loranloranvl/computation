@@ -46,9 +46,22 @@
 			<a href="jihua.html"><div>授课计划</div></a>
 		</nav>
 
-		
+		<div id="ppts">
+
+		</div>
 		</div>
 </div>
+	<script id="ht-ppts" type="text/x-handlebars-template">
+		{{#each this}}
+			<div id="ppt">
+				<a href="{{href}}">
+					<i class="am-icon-file-pdf-o"></i>
+					{{name}}
+				</a>
+			</div>
+		{{/each}}
+	</script>
+	<script src="js/ziyuan.js"></script>
 </body>
 
 </html>

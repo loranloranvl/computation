@@ -1,20 +1,23 @@
-table.big th, td{
+.big th, .big td{
 	text-align: center;
+	height: 42px;
+	line-height: 42px;
+	border: 1px solid #ddd;
 }
 
 @media only screen and (min-width: 641px) {
-	table.small {
+	.small {
 		display: none;
 	}
 }
 
-table.small {
+.small {
 	width: 100%;
 	margin: auto;
 	box-shadow: 0.6px 0.8px 4px rgba(4, 0, 0, 0.4);
 }
 
-table.small th, td {
+.small th, .small td {
 	text-align: center;
 	border: none;
 }
