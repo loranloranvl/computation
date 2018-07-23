@@ -9,7 +9,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('fileinclude', function() {
-	gulp.src('website/src/*.html')
+	return gulp.src('website/src/*.html')
 		.pipe(fileinclude({
 			prefix: '@@',
 			basepath: '@file'
@@ -18,7 +18,7 @@ gulp.task('fileinclude', function() {
 });
 
 gulp.task('less', function() {
-	gulp.src('website/less/*.less')
+	return gulp.src('website/less/*.less')
 		.pipe(less().on('error', function(err) {
 		console.error(err.toString());
 		this.emit('end');

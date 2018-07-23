@@ -1,0 +1,20 @@
+table.big th, td{
+	text-align: center;
+}
+
+@media only screen and (min-width: 641px) {
+	table.small {
+		display: none;
+	}
+}
+
+table.small {
+	width: 100%;
+	margin: auto;
+	box-shadow: 0.6px 0.8px 4px rgba(4, 0, 0, 0.4);
+}
+
+table.small th, td {
+	text-align: center;
+	border: none;
+}

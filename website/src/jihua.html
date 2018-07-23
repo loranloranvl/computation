@@ -2,293 +2,81 @@
 <html class="no-js">
 <head>
 	@@include('./partials/head.html')
+	<link rel="stylesheet" href="css/jihua.css">
 </head>
 <body>
 	@@include('./partials/framework-upper.html')
-		<table>
-		<tbody>
-		<tr>
-		<td width="53">
-		<p><strong>序号</strong></p>
-		</td>
-		<td width="309">
-		<p><strong>授 课 内 容</strong></p>
-		</td>
-		<td width="53">
-		<p><strong>学时</strong></p>
-		</td>
-		<td width="148">
-		<p><strong>作业和实验</strong></p>
-		</td>
-		<td width="88">
-		<p><strong>备 注</strong></p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>1</p>
-		</td>
-		<td width="309">
-		<p>自动机与语言</p>
-		</td>
-		<td width="53">
-		<p>8</p>
-		</td>
-		<td width="148">
-		<p>有</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>2</p>
-		</td>
-		<td width="309">
-		<p>上下文无关文法</p>
-		</td>
-		<td width="53">
-		<p>8</p>
-		</td>
-		<td width="148">
-		<p>有</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>3</p>
-		</td>
-		<td width="309">
-		<p>丘奇-图灵论题</p>
-		</td>
-		<td width="53">
-		<p>6</p>
-		</td>
-		<td width="148">
-		<p>有</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>4</p>
-		</td>
-		<td width="309">
-		<p>可判定性</p>
-		</td>
-		<td width="53">
-		<p>6</p>
-		</td>
-		<td width="148">
-		<p>有</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>5</p>
-		</td>
-		<td width="309">
-		<p>可归约性</p>
-		</td>
-		<td width="53">
-		<p>4</p>
-		</td>
-		<td width="148">
-		<p>有</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>6</p>
-		</td>
-		<td width="309">
-		<p>时间复杂度</p>
-		</td>
-		<td width="53">
-		<p>8</p>
-		</td>
-		<td width="148">
-		<p>有</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>7</p>
-		</td>
-		<td width="309">
-		<p>空间复杂度</p>
-		</td>
-		<td width="53">
-		<p>8</p>
-		</td>
-		<td width="148">
-		<p>有</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		</tbody>
+	<div id="tables">
+		
+	</div>
+	<script id="ht-tables" type="text/x-handlebars-template">
+		<table class="am-hide-sm big">
+			<tr>
+				<th style="width: 60px">序号</th>
+				<th style="width: 300px">授课内容</th>
+				<th style="width: 60px">学时</th>
+				<th style="width: 100px">作业和实验</th>
+				<th style="width: 60px">备注</th>
+			</tr>
+			{{#each this}}
+				<tr>
+					<td>{{index}}</td>
+					<td>{{name}}</td>
+					<td>{{hours}}</td>
+					<td>有</td>
+					<td></td>
+				</tr>
+			{{/each}}
+		</table><br>
+		<table class="am-hide-sm big">
+			<tr>
+				<th style="width: 60px">序号</th>
+				<th style="width: 300px">授课内容</th>
+				<th style="width: 60px">学时</th>
+				<th style="width: 100px">作业和实验</th>
+				<th style="width: 60px">备注</th>
+			</tr>
+			{{#each this}}
+				<tr>
+					<td>{{index}}</td>
+					<td>{{en}}</td>
+					<td>{{hours}}</td>
+					<td>有</td>
+					<td></td>
+				</tr>
+			{{/each}}
 		</table>
 
-		<br>
-
-		<table>
-		<tbody>
-		<tr>
-		<td width="53">
-		<p>SES#</p>
-		</td>
-		<td width="309">
-		<p>Topics</p>
-		</td>
-		<td width="53">
-		<p>Hours</p>
-		</td>
-		<td width="148">
-		<p>Homework and Experiment</p>
-		</td>
-		<td width="88">
-		<p>Remark</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>1</p>
-		</td>
-		<td width="309">
-		<p>Automata and Language Theory</p>
-		</td>
-		<td width="53">
-		<p>8</p>
-		</td>
-		<td width="148">
-		<p>Yes</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>2</p>
-		</td>
-		<td width="309">
-		<p>Context free grammars and languages</p>
-		</td>
-		<td width="53">
-		<p>8</p>
-		</td>
-		<td width="148">
-		<p>Yes</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>3</p>
-		</td>
-		<td width="309">
-		<p>Church-Turing Thesis</p>
-		</td>
-		<td width="53">
-		<p>6</p>
-		</td>
-		<td width="148">
-		<p>Yes</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>4</p>
-		</td>
-		<td width="309">
-		<p>Decidability</p>
-		</td>
-		<td width="53">
-		<p>6</p>
-		</td>
-		<td width="148">
-		<p>Yes</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>5</p>
-		</td>
-		<td width="309">
-		<p>Reducibility</p>
-		</td>
-		<td width="53">
-		<p>4</p>
-		</td>
-		<td width="148">
-		<p>Yes</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>6</p>
-		</td>
-		<td width="309">
-		<p>Time Complexity</p>
-		</td>
-		<td width="53">
-		<p>8</p>
-		</td>
-		<td width="148">
-		<p>Yes</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		<tr>
-		<td width="53">
-		<p>7</p>
-		</td>
-		<td width="309">
-		<p>Space Complexity</p>
-		</td>
-		<td width="53">
-		<p>8</p>
-		</td>
-		<td width="148">
-		<p>Yes</p>
-		</td>
-		<td width="88">
-		<p>&nbsp;</p>
-		</td>
-		</tr>
-		</tbody>
+		{{#each this}}
+		<table class="small">
+				<tr>
+					<td>序号</td>
+					<td>{{index}}</td>
+				</tr>
+				<tr>
+					<td>授课内容</td>
+					<td>{{name}}</td>
+				</tr>
+				<tr>
+					<td>学时</td>
+					<td>{{hours}}</td>
+				</tr>
+				<tr>
+					<td>作业和实验</td>
+					<td>有</td>
+				</tr>
+				<tr>
+					<td>备注</td>
+					<td></td>
+				</tr>
 		</table>
+		<br class="am-show-sm">
+		{{/each}}
+
+	</script>
+
 	@@include('./partials/framework-lower.html')
+	<script src="js/jihua.js"></script>
 </body>
 
 </html>
